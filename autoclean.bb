@@ -22,7 +22,7 @@
            (str/join (repeat 80 "="))))
 
 (defn default-config-path []
-  (str (System/getenv "HOME") "/.config/k8s-cleanup/config.edn"))
+  (str (System/getenv "HOME") "/.config/autoclean-k8s/config.edn"))
 
 (defn read-config [path]
   (try
@@ -139,7 +139,7 @@
           (delete ns delete-config (str branchprefix x) simulation)))
       (log :success "No cleanup needed"))))
 
-(def cache-dir (str (System/getenv "HOME") "/.cache/k8s-cleanup"))
+(def cache-dir (str (System/getenv "HOME") "/.cache/autoclean-k8s"))
 
 (defn ensure-cache-dir []
   (let [dir (io/file cache-dir)]
