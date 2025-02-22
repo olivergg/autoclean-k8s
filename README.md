@@ -16,14 +16,14 @@ It works by:
 - [Babashka](https://github.com/babashka/babashka#installation)
 - `kubectl` with access to your cluster
 - `git` command line tool
-- `jq` command line tool
+- `jq` command line tool (might be removed later)
 
 ## Installation
 
 1. Clone this repository
 2. Make the script executable:
 ```bash
-chmod +x k8s-branch-cleanup.clj
+chmod u+x k8s-branch-cleanup.clj
 ```
 
 ## Configuration
