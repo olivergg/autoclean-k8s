@@ -9,7 +9,7 @@ This tool helps maintain clean Kubernetes clusters by automatically (it could be
 It works by:
 1. Checking Git repositories for existing branches
 2. Comparing with deployed resources in Kubernetes
-3. Cleaning up resources that correspond to deleted branches (assuming proper annotations and labels have already bean set on kubernetes resources)
+3. Cleaning up resources that correspond to deleted branches (assuming proper annotations and labels have already been set on kubernetes resources)
 
 ## Prerequisites
 
