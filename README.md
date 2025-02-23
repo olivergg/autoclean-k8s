@@ -23,7 +23,7 @@ It works by:
 1. Clone this repository
 2. Make the script executable:
 ```bash
-chmod u+x k8s-branch-cleanup.clj
+chmod u+x autoclean.bb
 ```
 
 ## Configuration
@@ -58,17 +58,17 @@ Configuration options:
 
 Run in simulation mode (default, no deletions):
 ```bash
-./k8s-branch-cleanup.clj
+./autoclean.bb
 ```
 
 Run with actual deletions:
 ```bash
-./k8s-branch-cleanup.clj --simulation false
+./autoclean.bb --simulation false
 ```
 
 Use custom config file:
 ```bash
-./k8s-branch-cleanup.clj --config /path/to/config.edn
+./autoclean.bb --config /path/to/config.edn
 ```
 
 ## How it Works
