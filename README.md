@@ -4,12 +4,12 @@ A Babashka script to clean up Kubernetes resources associated with deleted Git b
 
 ## Overview
 
-This tool helps maintain clean Kubernetes clusters by automatically removing resources (deployments, statefulsets, services, ingresses) that were created for Git branches that no longer exist.
+This tool helps maintain clean Kubernetes clusters by automatically (it could be used from a CI pipeline) removing resources (deployments, statefulsets, services, ingresses) that were created for Git branches that no longer exist.
 
 It works by:
 1. Checking Git repositories for existing branches
 2. Comparing with deployed resources in Kubernetes
-3. Cleaning up resources that correspond to deleted branches
+3. Cleaning up resources that correspond to deleted branches (assuming proper annotations and labels have already bean set on kubernetes resources)
 
 ## Prerequisites
 
