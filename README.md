@@ -28,7 +28,7 @@ chmod u+x autoclean.bb
 
 ## Configuration
 
-Create a configuration file in EDN format at `~/.config/k8s-cleanup/config.edn`:
+Create a configuration file in EDN format at `~/.config/autoclean-k8s/config.edn`:
 
 ```clojure
 {:repos 
